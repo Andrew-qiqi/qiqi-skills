@@ -1,0 +1,7 @@
+interface:
+  display_name: "Find Papers"
+  short_description: "Find and verify scholarly papers"
+  default_prompt: "Use $find-papers to find the most relevant papers for a research topic."
+
+policy:
+  allow_implicit_invocation: true
