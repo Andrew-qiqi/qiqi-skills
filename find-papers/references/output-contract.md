@@ -4,9 +4,9 @@ Reports are for the user. Do not show search machinery, internal labels, raw log
 
 ## Default Report Structure
 
-Three sections, always in this order:
+Four sections, always in this order:
 
-### 1. 调研概况
+### 1. 检索范围
 
 The search parameters confirmed with the user at the start. 3-6 lines, no more:
 
@@ -42,8 +42,6 @@ Group by theme or direction. Use natural Chinese section headers:
 - `方向三：Benchmark 与评估`
 - `方向四：前沿方法`
 
-Not "簇 1", "簇 2".
-
 Each paper entry:
 
 ```
@@ -77,7 +75,19 @@ Organize by the user's likely goals:
 ### 做 System Building
 ```
 
-### 3. 其他事项
+### 3. 综合分析
+
+Based on the papers found and read, analyze and answer the user's research question. This section does three things:
+
+**判断**：对调研主题给出基于文献的判断——该领域的方法共识是什么、主流路线有哪些、核心瓶颈在哪里。每条判断必须引用具体论文作为依据（如"Toolformer（Schick et al., 2023）首次证明了自监督工具学习的可行性"），不能在没有任何一篇论文支撑的情况下做断言。
+
+**演进逻辑**：梳理文献之间的承接或对立关系。谁回应了谁的问题？哪个 benchmark 暴露了哪个方法的缺陷？后来的方法如何解决？对读者而言，这才是文献列表本身无法替代的价值。
+
+**建议**：基于上述分析，给读者实用的后续方向——从哪几篇入手、关注哪个方向的前沿、注意哪些已知局限。
+
+This section must be grounded in the papers found during this search, not in prior knowledge. It is the one place where synthesis and judgment are expected.
+
+### 4. 补充说明
 
 Only what affects the user's trust or decisions:
 
@@ -125,26 +135,28 @@ Only add brief process notes when:
 Adapt the default structure to the user's request:
 
 **Reading list:**
-- 调研概况
+- 检索范围
 - 优先阅读（3-5 篇）
 - 核心论文（grouped by theme）
 - 阅读路线
-- 其他事项
+- 补充说明
 
 **Method comparison:**
+- 检索范围
 - Question being answered
 - Compared papers
 - method / data / metric / result / limitation table
 - Full-text status for all core comparisons
 
 **Evidence brief:**
-- 调研概况
+- 检索范围
 - Bottom-line answer
 - Strongest supporting papers
 - Conflicting or limiting papers
 - Evidence depth and confidence limits
 
 **Related-work map:**
+- 检索范围
 - Topic clusters with chronology
 - Representative papers per cluster
 - Suggested paragraph structure for writing

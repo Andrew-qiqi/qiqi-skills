@@ -59,11 +59,12 @@ The helper caches parsed Markdown at `~/.cache/find-papers/` and prints JSON wit
 
 ### 5. Report for the User
 
-Read `references/output-contract.md` before final output. The report has three sections:
+Read `references/output-contract.md` before final output. The report has four sections:
 
-1. **调研概况** — the search parameters confirmed with the user (topic, time range, paper types, target size, sources).
+1. **检索范围** — the search parameters confirmed with the user (topic, time range, paper types, target size, sources).
 2. **调研结果** — priority reads, core papers grouped by theme, extended references, reading routes.
-3. **其他事项** — only the limitations that affect user trust or decisions, plus directions for further exploration.
+3. **综合分析** — analysis and answers to the research question based on the papers found; judgments and conclusions with inline citations to specific papers; practical suggestions.
+4. **补充说明** — only the limitations that affect user trust or decisions, plus directions for further exploration.
 
 Use natural language for evidence depth ("已阅读全文", "已阅读摘要"). Do not show machine-facing tags, raw logs, or search process. Do not add a provider-status table to the default Markdown report unless the user asked for reproducibility, audit, export, debugging, or provider diagnostics.
 
