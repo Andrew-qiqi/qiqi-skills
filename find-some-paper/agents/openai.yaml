@@ -1,0 +1,7 @@
+interface:
+  display_name: "Find Some Paper"
+  short_description: "Search, verify, and synthesize scholarly papers"
+  default_prompt: "Use $find-some-paper to find recent survey and core papers on a research topic."
+
+policy:
+  allow_implicit_invocation: true
